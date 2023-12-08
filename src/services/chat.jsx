@@ -5,7 +5,7 @@ export default async function handler({ apiKey, question }) {
     //const { apiKey, question } = req.body;
 
     try {
-      const prompt = `Answer concisely: ${question}`;
+      const prompt = `Answer concisely for this queston:${question}`;
       const response = await axios.post(
         "https://api.openai.com/v1/engines/davinci/completions",
         {
